@@ -1,3 +1,4 @@
+
 name: Python CI 
 on: 
   push: 
@@ -41,3 +42,6 @@ jobs:
           name: test-report 
 
           path: test-results/report.xml 
+      - name: Debug files
+        run: |
+          ls -R .
